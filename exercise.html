@@ -1,0 +1,173 @@
+<scrip>Hello word</scrip>
+<script>
+    // var name= "francis wong"
+    // function displayName() {
+    //     if (name === "Francis Wong")
+    //     console.log("your name is:" + name);
+    // }
+    // displayName();
+    // console.log(name);
+    // const third_name = "john flores"
+    // console.log(third_name);
+    // ---Second------------------------------------------
+    // let name = "Francis Wong";
+    // let age = 28;
+    // let isVegitarian = false;
+    // let nullValue = null;
+    // letUndefindValue = undefined;
+
+    // console.log(typeof name);
+    // console.log(typeof age);
+    // console.log(typeof isVegitarian);
+    // console.log(nullValue);
+    // console.log(typeof letUndefindValue);
+
+    // if (typeof name === "string") {
+    //     console.log("name is String");
+    // }
+
+    // if(typeof age === "number") {
+    //     console.log("age is number")
+    // }
+
+
+    // let name; 
+
+    // memory address
+    // name = "francis wong";
+
+    // console.log(typeof name)
+
+    // console.log(9 != 7);
+
+    // const oranges = 6 * 6;
+    // console.log(30 != oranges);
+
+    // console.log(5 != 57);
+
+    // let earningPerMonth =  [
+    //     {description: 'January', earningPerMonth: 1000 },
+    //     { description: 'Febaruary', earningPerMonth: 1000 },
+    //     { description: 'March', earningPerMonth: 1500 },
+    //     { description: 'April', earningPerMonth: 740 },
+    //     { description: 'May', earningPerMonth: 1000 },
+    // ];
+    // // let earningPerMonth = ["January", 1000, "Febaruary", 1000 ,"March", 1500, "April", 740, "May", 100];
+
+    // let totalSum = earningPerMonth.map(item => item.earningPerMonth).reduce((prev, curr) => prev + curr, 0);
+    // // console.log(earningPerMonth)
+    // console.log('Total Earn Per Month:' , earningPerMonth)
+    // console.log("Total Earnings Per Year: " + totalSum);
+
+
+    // let earningPerMonth = [
+    //     // ["January", 18000],
+    //     // ["Febaruary", 30000],
+    //     // ["March", 41000],
+    //     // ["April", 28000],
+    //     // [description:,'-January', earningPerMonth: 1000],
+    //     // [{ description: 'Febaruary', earningPerMonth: 1000 }],
+    //     // [{ description: 'March', earningPerMonth: 1500 }],
+    //     // [{ description: 'April', earningPerMonth: 740 }],
+    //     // [{ description: 'May', earningPerMonth: 1000 }],
+    //     {description: 'January', earningPerMonth: 1000 },
+    //     { description: 'Febaruary', earningPerMonth: 1000 },
+    //     { description: 'March', earningPerMonth: 1500 },
+    //     { description: 'April', earningPerMonth: 740 },
+    //     { description: 'May', earningPerMonth: 1000 },
+    // ];
+    // let totalSum = earningPerMonth.map(item => item.earningPerMonth).reduce((prev, curr) => prev + curr, 0);
+    // // console.log("salary for: " + earningPerMonth[0] + "");
+    // console.log("total: " + totalSum);
+    let coldblooded = ["dog", "bird", "lizard"];
+
+  
+
+    function Animals(name) {
+        this.name = name;
+    }
+
+    function Legs(legs) {
+        this.legs = legs;
+    }
+
+    function LegsBird(legBird) {
+        this.legsBird = legBird;
+    }
+
+    function AnimalHabitat(habitat) {
+        this.habitat = habitat;
+    }
+
+    function HabitatBird(bird) {
+        this.bird = bird;
+    }
+
+    function HabitatLizard(lizard) {
+        this.lizard = lizard
+    }
+    
+
+    Animals.prototype.constructor = Animals;
+    Animals.prototype.displayAnimalsDetails = function () {
+        console.log("Name of Animals: " + this.name)
+    }
+
+
+    Legs.prototype.constructor = Legs;
+    Legs.prototype.displayAnimalsDetails = function () {
+        console.log("Legs for dog and lizard: " + this.legs)
+    }
+
+    LegsBird.prototype.constructor = LegsBird;
+    LegsBird.prototype.displayAnimalsDetails = function () {
+        console.log("Legs for Bird: " + this.legsBird)
+    }
+
+    AnimalHabitat.prototype.constructor = AnimalHabitat;
+    AnimalHabitat.prototype.displayAnimalsDetails = function () {
+        console.log("Habitat for dog: " + this.habitat)
+    }
+
+    HabitatBird.prototype.constructor = HabitatBird;
+    HabitatBird.prototype.displayAnimalsDetails = function () {
+        console.log("Habitat for bird: " + this.bird)
+    }
+
+    HabitatLizard.prototype.constructor = HabitatLizard;
+    HabitatLizard.prototype.displayAnimalsDetails = function () {
+        console.log("Habitat for Lizard: " + this.lizard)
+    }
+
+
+    let name = new Animals("Dog, Bird, Lizard");
+    name.displayAnimalsDetails();
+
+    let legs = new Legs(4);
+    legs.displayAnimalsDetails();
+
+    let legsBird = new LegsBird(2);
+    legsBird.displayAnimalsDetails();
+
+
+    let habitat = new HabitatBird("Land and Air");
+    habitat.displayAnimalsDetails();
+
+    let lizard = new HabitatLizard("Land and Water");
+    lizard.displayAnimalsDetails();
+
+    let bird = new AnimalHabitat("Land");
+    bird.displayAnimalsDetails();
+
+
+
+        // let noLizard = coldblooded.filter((value, index) => {
+        //     if(value === "lizard") {
+        //         console.log("Cold Blooded: ", value);
+        //         return true;
+        //     }
+        //     console.log("Cold Blooded: " + value)
+        //     return false;
+        // });
+        // console.log(noLizard)
+</script>
