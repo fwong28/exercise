@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .red_text {
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <ul id="user_list"></ul>
+        <a for="firstName">First Name:<input id="firstName" name="firstName" type="text"></a>
+        <a for="lastName">Last Name: <input id="lastName" name="lastName" type="text"></a>
+        <a for="password">password:<input id="password" name="password" type="text"></a>
+        <a for="email">Email:<input id="email" name="email" type="text"></a>
+    </div>
+    <button id="submit">SPERSONAL DETAILS</button>
+    <script>
+        let person = {
+            firstName: "",
+            lastName: "",
+            password: "",
+            email: ""
+        }
+        let jsonPerson = JSON.stringify(person);
+
+        document.getElementById('firstName').value = person.firstName;
+        document.getElementById('lastName').value = person.lastName;
+        document.getElementById('password').value = person.password;
+        document.getElementById('email').value = person.email;
+
+        let btn_submit = document.getElementById("btn_submit");
+
+        submit.addEventListener('click', event => {
+            person.firstName = document.getElementById('firstName').value;
+            person.lastName = document.getElementById('lastName').value;
+            person.password = document.getElementById('password').value;
+            person.email = document.getElementById('email').value;
+            let personalDetails = document.getElementById('user_list');
+            personalDetails.innerText = JSON.stringify(person);
+
+            if (email.value === "") {
+                alert("Please enter your email address.");
+                eamil.focus();
+                return false;
+            }
+           return true;
+        })
+    </script>
+</body>
+
+</html>

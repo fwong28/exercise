@@ -1,4 +1,4 @@
-<scrip>Hello word</scrip>
+<!-- <scrip>Hello word</scrip>
 <script>
     // var name= "francis wong"
     // function displayName() {
@@ -79,95 +79,124 @@
     // let totalSum = earningPerMonth.map(item => item.earningPerMonth).reduce((prev, curr) => prev + curr, 0);
     // // console.log("salary for: " + earningPerMonth[0] + "");
     // console.log("total: " + totalSum);
-    let coldblooded = ["dog", "bird", "lizard"];
-
-  
-
-    function Animals(name) {
-        this.name = name;
-    }
-
-    function Legs(legs) {
-        this.legs = legs;
-    }
-
-    function LegsBird(legBird) {
-        this.legsBird = legBird;
-    }
-
-    function AnimalHabitat(habitat) {
-        this.habitat = habitat;
-    }
-
-    function HabitatBird(bird) {
-        this.bird = bird;
-    }
-
-    function HabitatLizard(lizard) {
-        this.lizard = lizard
-    }
-    
-
-    Animals.prototype.constructor = Animals;
-    Animals.prototype.displayAnimalsDetails = function () {
-        console.log("Name of Animals: " + this.name)
-    }
-
-
-    Legs.prototype.constructor = Legs;
-    Legs.prototype.displayAnimalsDetails = function () {
-        console.log("Legs for dog and lizard: " + this.legs)
-    }
-
-    LegsBird.prototype.constructor = LegsBird;
-    LegsBird.prototype.displayAnimalsDetails = function () {
-        console.log("Legs for Bird: " + this.legsBird)
-    }
-
-    AnimalHabitat.prototype.constructor = AnimalHabitat;
-    AnimalHabitat.prototype.displayAnimalsDetails = function () {
-        console.log("Habitat for dog: " + this.habitat)
-    }
-
-    HabitatBird.prototype.constructor = HabitatBird;
-    HabitatBird.prototype.displayAnimalsDetails = function () {
-        console.log("Habitat for bird: " + this.bird)
-    }
-
-    HabitatLizard.prototype.constructor = HabitatLizard;
-    HabitatLizard.prototype.displayAnimalsDetails = function () {
-        console.log("Habitat for Lizard: " + this.lizard)
-    }
-
-
-    let name = new Animals("Dog, Bird, Lizard");
-    name.displayAnimalsDetails();
-
-    let legs = new Legs(4);
-    legs.displayAnimalsDetails();
-
-    let legsBird = new LegsBird(2);
-    legsBird.displayAnimalsDetails();
-
-
-    let habitat = new HabitatBird("Land and Air");
-    habitat.displayAnimalsDetails();
-
-    let lizard = new HabitatLizard("Land and Water");
-    lizard.displayAnimalsDetails();
-
-    let bird = new AnimalHabitat("Land");
-    bird.displayAnimalsDetails();
+    // let coldblooded = ["dog", "bird", "lizard"];
 
 
 
-        // let noLizard = coldblooded.filter((value, index) => {
-        //     if(value === "lizard") {
-        //         console.log("Cold Blooded: ", value);
-        //         return true;
-        //     }
-        //     console.log("Cold Blooded: " + value)
-        //     return false;
-        // });
-        // console.log(noLizard)
-</script>
+    // function Animals(name) {
+    //     this.name = name;
+    // }
+
+    // function Legs(legs) {
+    //     this.legs = legs;
+    // }
+
+    // function LegsBird(legBird) {
+    //     this.legsBird = legBird;
+    // }
+
+    // function AnimalHabitat(habitat) {
+    //     this.habitat = habitat;
+    // }
+
+    // function HabitatBird(bird) {
+    //     this.bird = bird;
+    // }
+
+    // function HabitatLizard(lizard) {
+    //     this.lizard = lizard
+    // }
+
+
+    // Animals.prototype.constructor = Animals;
+    // Animals.prototype.displayAnimalsDetails = function () {
+    //     console.log("Name of Animals: " + this.name)
+    // }
+
+
+    // Legs.prototype.constructor = Legs;
+    // Legs.prototype.displayAnimalsDetails = function () {
+    //     console.log("Legs for dog and lizard: " + this.legs)
+    // }
+
+    // LegsBird.prototype.constructor = LegsBird;
+    // LegsBird.prototype.displayAnimalsDetails = function () {
+    //     console.log("Legs for Bird: " + this.legsBird)
+    // }
+
+    // AnimalHabitat.prototype.constructor = AnimalHabitat;
+    // AnimalHabitat.prototype.displayAnimalsDetails = function () {
+    //     console.log("Habitat for dog: " + this.habitat)
+    // }
+
+    // HabitatBird.prototype.constructor = HabitatBird;
+    // HabitatBird.prototype.displayAnimalsDetails = function () {
+    //     console.log("Habitat for bird: " + this.bird)
+    // }
+
+    // HabitatLizard.prototype.constructor = HabitatLizard;
+    // HabitatLizard.prototype.displayAnimalsDetails = function () {
+    //     console.log("Habitat for Lizard: " + this.lizard)
+    // }
+
+
+    // let name = new Animals("Dog, Bird, Lizard");
+    // name.displayAnimalsDetails();
+
+    // let legs = new Legs(4);
+    // legs.displayAnimalsDetails();
+
+    // let legsBird = new LegsBird(2);
+    // legsBird.displayAnimalsDetails();
+
+
+    // let habitat = new HabitatBird("Land and Air");
+    // habitat.displayAnimalsDetails();
+
+    // let lizard = new HabitatLizard("Land and Water");
+    // lizard.displayAnimalsDetails();
+
+    // let bird = new AnimalHabitat("Land");
+    // bird.displayAnimalsDetails();
+
+
+
+    // let noLizard = coldblooded.filter((value, index) => {
+    //     if(value === "lizard") {
+    //         console.log("Cold Blooded: ", value);
+    //         return true;
+    //     }
+    //     console.log("Cold Blooded: " + value)
+    //     return false;
+    // });
+    // console.log(noLizard)
+
+    // let typeOfAnimals = new Map();
+    // let coldblooded = ["Dog","Bird","lizard"];
+    // typeOfAnimals.set(1, { animals: "Dog", species: "Mamal", habitat: "Land", numberOfLegs: "4"});
+    // typeOfAnimals.set(2, { animals: "Bird", species: "Mamal" , habitat: "Land and Air", numberOfLegs: "2"});
+    // typeOfAnimals.set(3, { animals: "Lizard", species: "Reptile" , habitat: "Land and Water", numberOfLegs: "4"});
+    // let noLizard = coldblooded.filter((value, index) => {
+    //     if(value === "lizard ") {
+    //         // console.log("no banana please es6");
+    //         return false;
+    //     }
+    //     console.log("retain: " + value)
+    //     return true;
+    // });
+    // // console.log(coldblooded);
+
+    // console.log(typeOfAnimals.get(1));
+    // console.log(typeOfAnimals.get(2));
+    // console.log(typeOfAnimals.get(3));
+
+    <div id="">
+        <ul>
+            <a input type="text">firstname</a>
+            <a input type="text">lastname</a>
+            <a input type="text">email address</a>
+            <a input type="text">password</a>
+            <a><button id="btn_add" class="btn"></button></a>
+        </ul>
+    </div>
+</script> -->
